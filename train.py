@@ -79,7 +79,7 @@ def main():
     learning_rate = arguments.learning_rate
     hidden_units = arguments.hidden_units
 
-    print('====== SETTINGs ===== ')
+    print('====== SETTINGS ===== ')
     print('Data dir: {}'.format(data_dir))
     print('Arch: {}'.format(arch))
     print('Learning rate: {}'.format(learning_rate))
@@ -155,6 +155,7 @@ def main():
     print('Starting Training Now')
     train(model, epochs, device, criterion, optimizer, trainloader, validloader)
     checkpoint = {
+        "arch":model,
         "input_size": input_size,
         "output_size": output_size,
         "epochs": epochs,
