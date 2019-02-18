@@ -102,5 +102,6 @@ ENV/
 
 /assets/*
 
-checkpoint.pth
+*.pth
 .vscode
+.idea
